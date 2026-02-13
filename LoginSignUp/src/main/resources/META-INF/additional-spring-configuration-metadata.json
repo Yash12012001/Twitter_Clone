@@ -1,0 +1,12 @@
+{"properties": [
+  {
+    "name": "app.security.passKey",
+    "type": "java.lang.String",
+    "description": "Security Key for Hashing"
+  },
+  {
+    "name": "app.Jwt.secretKey",
+    "type": "java.lang.String",
+    "description": "A secret key for JWT"
+  }
+]}
