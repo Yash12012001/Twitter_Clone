@@ -6,7 +6,7 @@ target/
 
 ### GIT ATTRIBUTE AND DS STORE FILE ###
 .gitattributes
-.DS_STORE
+.DS_Store
 
 ### STS ###
 .apt_generated
