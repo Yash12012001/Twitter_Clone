@@ -4,6 +4,10 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
+### GIT ATTRIBUTE AND DS STORE FILE ###
+.gitattributes
+.DS_STORE
+
 ### STS ###
 .apt_generated
 .classpath
