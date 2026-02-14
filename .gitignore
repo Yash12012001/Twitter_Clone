@@ -7,6 +7,10 @@
 # BlueJ files
 *.ctxt
 
+### GIT ATTRIBUTE AND DS STORE FILE ###
+.gitattributes
+.DS_Store
+
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
