@@ -7,6 +7,7 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.web.authentication.WebAuthenticationDetailsSource;
+import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 
 import com.twitter.LoginSignUp.Model.UserInfo;
@@ -18,7 +19,8 @@ import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
-public class jwtAuthFilter extends OncePerRequestFilter {
+@Component
+public class JwtAuthFilter extends OncePerRequestFilter {
 	
 	@Autowired
 	JwtService jwtService;
@@ -29,7 +31,17 @@ public class jwtAuthFilter extends OncePerRequestFilter {
 	@Override
 	protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain)
 			throws ServletException, IOException {
-		// TODO Auto-generated method stub
+		
+		System.out.println("reached");
+		
+		String path = request.getServletPath();
+		if(path.equalsIgnoreCase("/TwiterClone/Login") || path.equalsIgnoreCase("/TwitterClone/SignUp")) {
+			filterChain.doFilter(request, response);
+			return;
+		}
+		
+		
+
 		
 		String authToken= request.getHeader("Authorization");
 		String token=null;

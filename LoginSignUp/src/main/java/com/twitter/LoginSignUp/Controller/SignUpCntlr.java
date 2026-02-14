@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.twitter.CommonLibrary.InsertUserDTO.InsertUserDataReqBody;
 import com.twitter.LoginSignUp.Service.UserSignUpSvc;
 
+
 @RestController
 @RequestMapping("/TwiterClone/SignUp")
 public class SignUpCntlr {
@@ -20,6 +21,8 @@ public class SignUpCntlr {
 	
 	@PostMapping
 	public ResponseEntity<Object> UserSignUp(@RequestBody InsertUserDataReqBody req){
+		
+		System.out.println("reached");
 		
 		return service.createUser(req);
 	}
