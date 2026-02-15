@@ -21,8 +21,8 @@ public class UserLoginSvc {
 	@Autowired
 	FeignClient client;
 	
-	@Autowired
-	JwtService jwtService;
+//	@Autowired
+//	JwtService jwtService;
 	
 	@Autowired 
 	private TwitterPasswordEncoder encoder;
@@ -47,9 +47,9 @@ public class UserLoginSvc {
 			if(encoder.matches(req.getPassword(), res.getPassword())) {
 				
 				Map<String,Object> responseMap = new HashMap<>();
-				String bearerToken = jwtService.generateToken(res.getEmail());
+//				String bearerToken = jwtService.generateToken(res.getEmail());
 				
-				responseMap.put("Bearer", bearerToken);
+//				responseMap.put("Bearer", bearerToken);
 				responseMap.put("msg", "login succesful");
 				return new ResponseEntity(responseMap,HttpStatus.OK);
 			} else {
