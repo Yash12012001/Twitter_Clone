@@ -67,7 +67,7 @@
 		<!--JWT End-->
 		
 		<!--dependancies for spring security-->
-		<dependency>
+		<!--<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
 		</dependency>
@@ -81,7 +81,7 @@
 			<artifactId>spring-boot-starter-security-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<!--Spring Security End-->
+		<!- -Spring Security End-->
 		
 		<!--Dependancies for FeignClient-->	
 		<dependency>

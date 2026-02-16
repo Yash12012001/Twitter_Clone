@@ -1,0 +1,8 @@
+package com.twitter.CommonLibrary.FetchMyPostDTO;
+
+import lombok.Data;
+
+@Data
+public class FetchMyPostResBody {
+
+}

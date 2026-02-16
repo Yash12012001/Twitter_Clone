@@ -7,7 +7,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 @EnableFeignClients
-@ComponentScan({"com.twitter.DBInstance"})
+//@ComponentScan({"com.twitter.DBInstance"})
 public class LoginSignUpApplication {
 
 	public static void main(String[] args) {

@@ -1,7 +1,10 @@
 package com.twitter.DBInstance.Entity;
 
-import jakarta.persistence.*;
+import java.time.LocalDateTime;
 
+import jakarta.persistence.*;
+import lombok.Data;
+@Data
 @Entity
 @Table(name = "posts")
 public class Post {
@@ -12,7 +15,7 @@ public class Post {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "author_id", nullable = false)
-    private User author;
+    private DataUser author;
 
     @Column(columnDefinition = "TEXT", nullable = false)
     private String content;
