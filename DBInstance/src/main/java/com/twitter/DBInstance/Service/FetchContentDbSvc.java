@@ -7,13 +7,17 @@ import org.springframework.stereotype.Service;
 import com.twitter.DBInstance.Repository.IPostRepo;
 
 @Service
-public class fetchContentDbSvc {
+public class FetchContentDbSvc {
 	
 	@Autowired 
 	IPostRepo repo;
 	
-	public ResponseEntity<Object> fetchMyPost() {
-		return null;	
+	public ResponseEntity<FetchMyPostResBody> fetchMyPost(FetchMyPostReqBody req) {
+		try{
+			List<>
+		}catch (Exception e){
+
+		}
 	}
 	
 	public ResponseEntity<Object> fetchMyFeed(){
