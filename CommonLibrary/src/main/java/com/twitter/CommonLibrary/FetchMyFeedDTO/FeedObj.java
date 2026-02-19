@@ -3,8 +3,12 @@ package com.twitter.CommonLibrary.FetchMyFeedDTO;
 import lombok.Data;
 
 @Data
-public class FetchMyFeedReqBody {
+public class FeedObj {
 	
-	private String userId;
+	private String authorId;
+	
+	private String content;
+	
+	
 
 }
