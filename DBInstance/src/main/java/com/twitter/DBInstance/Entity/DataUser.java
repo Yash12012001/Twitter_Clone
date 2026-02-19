@@ -1,6 +1,5 @@
 package com.twitter.DBInstance.Entity;
 
-import java.util.List;
 import java.util.Set;
 
 import jakarta.persistence.Entity;

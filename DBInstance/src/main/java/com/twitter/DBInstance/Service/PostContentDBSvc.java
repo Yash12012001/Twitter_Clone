@@ -11,7 +11,9 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
 import com.twitter.CommonLibrary.Constants.StatusCodes;
-import com.twitter.CommonLibrary.PostContentDTO.*;
+import com.twitter.CommonLibrary.PostContentDTO.PostContentReqBody;
+import com.twitter.CommonLibrary.PostContentDTO.PostContentResBody;
+//import com.twitter.CommonLibrary.PostContentDTO.*;
 import com.twitter.DBInstance.Entity.DataUser;
 import com.twitter.DBInstance.Entity.Post;
 import com.twitter.DBInstance.Repository.IDataUserRepo;
@@ -26,7 +28,7 @@ public class PostContentDBSvc{
     @Autowired
 	IDataUserRepo userRepo;
     
-    @Autowired
+    
     
 
     public ResponseEntity<PostContentResBody> postContent (PostContentReqBody req){
